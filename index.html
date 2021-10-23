@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang-"pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Coutdown Timer</title>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+    <script type="text/javascript" src="coutdown.js"></script>
+</head>
+<body>
+    <form id="Inputs">
+        <h1>Inserir dados</h1>
+        <label>Nome do evento:</label>
+        <input type="text" id="NomeEventoInput" onchange="colocaNome(this.value)"/><br/><br/>
+
+        <label>Data:</label>
+        <input type="date" name="DataInput" value="" id="DataInput" onchange="Timer(this.value)"/><br/><br/>
+
+        <input type="button" id="ComecarBotao" onclick="chamarContador()" value="Começar"/>
+    </form>
+
+    <div id="cronometro">
+        <input type="button" value="X" id="fecharContador" onclick="deschamarContador()"/><br/>
+        <h1 class="Clock-Nome"></h1><br/>
+
+        <div id="CoutdownTimer">
+            <div class="clock-coluna">
+                <p class="clock-dia clock-timer"></p>
+                <p class="clock-label">Dia(s)</p>
+            </div>
+    
+            <div class="clock-coluna">
+                <p class="clock-hora clock-timer"></p>
+                <p class="clock-label">Hora(s)</p>
+            </div>
+    
+            <div class="clock-coluna">
+                <p class="clock-minuto clock-timer"></p>
+                <p class="clock-label">Minuto(s)</p>
+            </div>
+    
+            <div class="clock-coluna">
+                <p class="clock-segundo clock-timer"></p>
+                <p class="clock-label">Segundo(s)</p>
+            </div>
+        </div>
+    </div>>
+</body>
+</html>

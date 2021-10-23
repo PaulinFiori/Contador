@@ -1,0 +1,54 @@
+body{
+    width: max-content;
+    height: max-content;
+}
+
+#CoutdownTimer{
+    background-color: black;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.clock-coluna {
+	margin-right: 7rem;
+	text-align: center;
+	position: relative;
+  }
+  .clock-coluna::after {
+	content: ":";
+	display: block;
+	height: 0.25rem;
+	width: 0.25rem;
+	font-size: 36px;
+	font-weight: 200;
+	color: white;
+	position: absolute;
+	top: 60px;
+	right: -35px;
+  }
+  .clock-coluna:last-child::after {
+	display: none;
+  }
+  
+  .clock-coluna:last-child {
+	margin-right: 0;
+  }
+
+.clock-label {
+	padding-top: 10px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid white;
+}
+
+.clock-timer {
+	color: white;
+	font-size: 36px;
+	line-height: 1;
+}

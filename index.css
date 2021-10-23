@@ -1,0 +1,123 @@
+body{
+    background: white;
+    color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10%;
+}
+
+#Inputs{
+    border: 2px solid black;
+	border-radius: 30px;
+	width: 600px;
+	height: 300px;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#NomeEventoInput{
+    height: 30px;
+    width: 200px;
+    font-size: 24px;
+}
+
+#DataInput{
+    height: 30px;
+    width: 200px;
+    font-size: 24px;
+}
+
+#HorarioInput{
+    height: 30px;
+    width: 200px;
+    font-size: 24px;
+}
+
+#ComecarBotao{
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+
+#cronometro {
+	background-color: white;
+	z-index: 1;
+	position: absolute;
+	width: 60%;
+	height: 60%;
+	border: 3px solid black;
+	display: none;
+}
+
+#CoutdownTimer{
+	width: max-content;
+    height: max-content;
+    background-color: black;
+	margin: auto;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+	display: flex;
+}
+
+.clock-coluna {
+	margin-right: 7rem;
+	text-align: center;
+	position: relative;
+  }
+  .clock-coluna::after {
+	content: ":";
+	display: block;
+	height: 0.25rem;
+	width: 0.25rem;
+	font-size: 36px;
+	font-weight: 200;
+	color: white;
+	position: absolute;
+	top: 60px;
+	right: -35px;
+  }
+  .clock-coluna:last-child::after {
+	display: none;
+  }
+  
+  .clock-coluna:last-child {
+	margin-right: 0;
+  }
+
+.clock-label {
+	padding-top: 10px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	border-top: 1px solid white;
+}
+
+.clock-timer {
+	color: white;
+	font-size: 36px;
+	line-height: 1;
+}
+
+#fecharContador{
+	color: black;
+	background-color: rgba(255, 255, 255, 0);
+	border-color: rgba(255, 255, 255, 0);
+	font-size: 24px;
+	float: right;
+}
+
+.Clock-Nome {
+	text-align: center;
+	color: black;
+}
